@@ -10,46 +10,41 @@ it('Access application', () => {
    cy.visit(url);
 })
 
-it('Formulario', () => {
+it('Preencher  Formulario', () => {
    batistaPageObjects.clickFormulario();
-})
-
-it('Usuarios', () => {
-   batistaPageObjects.clickUsuarios();
-})
-
-it('Name', () => {
+   batistaPageObjects.clickUsuario();
    batistaPageObjects.typeName('Marcelo');
-})
-
-it('Lastname', () => {
    batistaPageObjects.typeLastname('Medeiros');
-})
-
-it('Email', () => {
    batistaPageObjects.typeEmail('suguiomarcelo@gmail.com');
-})
-  
-it('Endereco', () => {
    batistaPageObjects.typeEndereco('rua dos macucos');
-})
-
-it('Universidade', () => {
    batistaPageObjects.typeUniversidade('maringa');
-})
-
-it('Profissao', () => {
    batistaPageObjects.typeProsissao('teste');
-})
-
-it('Genero', () => {
-   batistaPageObjects.typeGenero('masculino');  
-})
-
-it('Idade', () => {
+   batistaPageObjects.typeGenero('masculino');
    batistaPageObjects.typeIdade('45');
+   batistaPageObjects.clickCriar();
 })
 
-it('Criar', () => {
-   batistaPageObjects.clickCriar();
+it('Buscar Elementos Links', () => {
+   batistaPageObjects.clickBuscarElementosLinks();
+   batistaPageObjects.clickLinks();
+})
+
+it('Selecionar Ok200', () => {
+   batistaPageObjects.clickOk200();
+})
+
+it('Voltar Pagina', () => {
+   batistaPageObjects.clickVoltar();
+})
+
+it('Selecionar Erro500', () => {
+   batistaPageObjects.clickErro500();
+})
+
+it('Buscar Elementos Btn', () => {
+   batistaPageObjects.clickBuscarElementosBtn();
+})
+
+it('Btn Raised', () => {
+   batistaPageObjects.clickRaisedBtn();
 })

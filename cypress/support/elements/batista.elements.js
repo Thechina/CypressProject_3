@@ -4,7 +4,7 @@ class BatistaElements {
         return cy.get('a[class="collapsible-header "]');
     }
 
-    inputUsuarios() {
+    inputUsuario() {
         return cy.get('a[href="/users/new"]');
     }
 
@@ -42,6 +42,34 @@ class BatistaElements {
 
     inputCriar() {
         return cy.get('input[value="Criar"]');
+    }
+
+    inputBuscarElementosLinks() {
+        return cy.get('a').contains('Busca de elementos');
+    }
+
+    inputLinks() {
+        return cy.get('a[href="/buscaelementos/links"]');
+    }
+
+    inputOk200() {
+        return cy.get('a').contains('Ok 200 - Sucess');
+    }
+
+    inputVoltar() {
+        return cy.get('a[class="btn waves-light red"]');
+    }
+
+    inputErro500() {
+        return cy.get('a').contains('Erro 500 - Internal Server Error');
+    }
+
+    inputBuscarElementosBtn() {
+        return cy.get('a').contains('Botões');
+    }
+
+    inputRaisedBtn() {
+        return cy.get('a[class="waves-light btn"]');
     }
 
 }

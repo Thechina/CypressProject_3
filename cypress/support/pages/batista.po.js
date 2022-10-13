@@ -8,8 +8,8 @@ class BatistaPageObjects {
     batistaElements.inputFormulario().click();
   }
 
-  clickUsuarios() {
-    batistaElements.inputUsuarios().click();
+  clickUsuario() {
+    batistaElements.inputUsuario().click();
   }
 
   typeName(Marcelo) {
@@ -46,6 +46,34 @@ class BatistaPageObjects {
 
   clickCriar() {
     batistaElements.inputCriar().click();
+  }
+
+  clickBuscarElementosLinks() {
+    batistaElements.inputBuscarElementosLinks().click();
+  }
+
+  clickLinks() {
+    batistaElements.inputLinks().click();
+  }
+
+  clickOk200() {
+    batistaElements.inputOk200().click();
+  }
+
+  clickVoltar() {
+    batistaElements.inputVoltar().click();
+  }
+
+  clickErro500() {
+    batistaElements.inputErro500().click();
+  }
+
+  clickBuscarElementosBtn() {
+    batistaElements.inputBuscarElementosBtn().click();
+  }
+
+  clickRaisedBtn() {
+    batistaElements.inputRaisedBtn().click();
   }
 
 }
